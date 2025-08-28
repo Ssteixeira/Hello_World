@@ -49,21 +49,51 @@ window.onscroll = () => {
     ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
     ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
-    /*=============== typed js ===============*/
-    const typed  = new Typed ('.multiple-text', {
-        strings: ['Estudante de Eng de Software','FrontEnd Developer', 'BackEnd Developer', 'Estudante de Big Data'],
+    /*=============== Typed.js multilíngue ===============*/
+
+// Textos por idioma
+const texts = {
+    pt_BR: ['Estudante de Eng de Software', 'FrontEnd Developer', 'BackEnd Developer', 'Estudante de Big Data'],
+    en: ['Software Eng Student', 'FrontEnd Developer', 'BackEnd Developer', 'Big Data Student']
+};
+
+// Detecta idioma inicial da página
+let lang = document.documentElement.lang || 'pt';
+
+// Função para inicializar Typed.js
+let typed; 
+function initTyped(language) {
+    if (typed) typed.destroy(); 
+    typed = new Typed('.multiple-text', {
+        strings: texts[language],
         typeSpeed: 100,
         backSpeed: 100,
         backDelay: 1000,
         loop: true
-    })
+    });
+}
 
+// Inicializa com idioma da página
+initTyped(lang);
+
+// Botões para trocar idioma
+document.getElementById('btn-pt').addEventListener('click', () => {
+    lang = 'pt';
+    document.documentElement.lang = 'pt';
+    initTyped(lang);
+});
+
+document.getElementById('btn-en').addEventListener('click', () => {
+    lang = 'en';
+    document.documentElement.lang = 'en';
+    initTyped(lang);
+});
 /*=============== send email ===============*/
   const form = document.querySelector('#contact form');
   const thankYou = form.querySelector('.thank-you-message');
 
   form.addEventListener('submit', function(event) {
-      event.preventDefault(); // evita o envio padrão
+      event.preventDefault(); 
 
       fetch(form.action, {
           method: 'POST',

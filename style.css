@@ -33,6 +33,28 @@ section {
     padding: 10rem 9% 2rem;
 }
 
+.language-switch {
+  position: fixed;
+  top: 15px;
+  right: 30px;
+  background: var(--main-color);
+  padding: 5px 12px;
+  border-radius: 8px;
+  font-size: 1.4rem;
+  z-index: 200;
+}
+
+.language-switch a {
+  color: var(--text-color);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.language-switch a:hover {
+  color: var(--bg-color);
+}
+
+
 .header {
     position: fixed;
     top: 0;
@@ -558,3 +580,5 @@ span {
     from { opacity: 0; }
     to { opacity: 1; }
 }
+
+

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt_BR">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,14 +32,13 @@
   </nav>
 </header>
 
-
     <!--Home Section design-->
     <section class="home" id="home">
         <div class="home-content">
         <h3>Olá, essa sou eu!</h3>
         <h1>Sabrinna de Souza</h1>
         <h3>E eu sou <span class="multiple-text"></span></h3>
-        <p>Olá! Sou a Sabrinna, futura engenheira de software e exploradora do universo Big Data.  
+        <p>Olá! Eu me chamo Sabrinna, sou formada em engenheira e estudante de Big Data.  
             Entre um código e outro, você vai me encontrar cuidando do meu gato Plínio, e tomando café (muito café!) e assistindo séries para me inspirar.
             Sou apaixonada por transformar problemas complexos em soluções inteligentes. 
             Quando não estou no modo Dev, estou no modo cuidadora de gato, porque nem só de bugs vive uma programadora!</p>
@@ -49,10 +48,10 @@
                 <a href="https://www.instagram.com/sabrina_tsts"><i class='bx bxl-instagram' ></i></a>
                 <a href="https://github.com/Ssteixeira"><i class='bx bxl-github' ></i></a>
             </div> 
-        <a href="img/Doc/SABRINNA Curriculum.pdf" class="btn">Download CV</a>
+        <a href="img/Doc/Sabrinna_cv_.pdf" class="btn">Download CV</a>
             </div>
         <div class="home-img">
-            <img src="img/Foto_ghibli.jpeg" alt="">
+            <img src="img/foto_perfil1.jpeg" alt="">
         </div> 
         </section>
         
@@ -63,8 +62,8 @@
         </div>
         <div class="about-content">
             <h2 class="heading">Sobre <span>mim</span></h2>
-            <h3>Estudante de Engenharia de Software</h3>
-            <p>Prazer! Sou a Sabrinna, futura engenheira de software a pessoa que escreve código, fala com o Plínio (meu gato) e conversa com o Chatgpt como se ele fosse meu melhor amigo.
+            <h3>Engenharia de Software</h3>
+            <p>Prazer! Sou a Sabrinna, engenheira de software a pessoa que escreve código, fala com o Plínio (meu gato) e conversa com o Chatgpt como se ele fosse meu melhor amigo.
             Minha stack favorita? Café + música + IDE aberta. Sou movida a desafios, memes de programadores e aquela emoção de rodar um código sem dar erro na primeira tentativa (raro, mas acontece!).
             Se não estiver programando, provavelmente estou planejando dominar o mundo com IA... ou apenas assistindo séries enquanto meu pet julga minhas escolhas.</p>
         </div>
@@ -218,29 +217,33 @@
 
    <!--Contato section-->
     <section class="contact" id="contact">
-    <h2 class="heading">Entre em <span>contato</span></h2>
-    <form action="https://formsubmit.co/sabrinnasouzats27@gmail.com" method="POST">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_template" value="table">
+  <h2 class="heading">Get in <span>Touch</span></h2>
+
+  <form id="contact-form">
+    <div class="input-box">
+      <input type="text" name="name" placeholder="Nome completo" required>
+      <input type="email" name="email" placeholder="Email" required>
+    </div>
 
     <div class="input-box">
-      <input type="text" name="nome" placeholder="Nome Completo" required>
-      <input type="email" name="email" placeholder="Email" required>
-     </div>
-        <div class="input-box">
-      <input type="text" name="telefone" placeholder="Telefone/Celular" required>
-      <input type="text" name="assunto" placeholder="Assunto" required>
-     </div>
-     <textarea name="mensagem" cols="30" rows="10" placeholder="Escreva sua mensagem aqui..." required></textarea>
-     <button type="submit" class="btn">Enviar Mensagem</button>
-     <p class="thank-you-message">Obrigado! Sua mensagem foi enviada com sucesso. 😊</p>
-    </form>
-    </section>
+      <input type="text" name="phone" placeholder="Número de Telefone" required>
+      <input type="text" name="subject" placeholder="Assunto" required>
+    </div>
+
+    <textarea name="message" placeholder="Escreva sua mensagem aqui..." required></textarea>
+    <button type="submit" class="btn">Send Message</button>
+
+    <p class="thank-you-message">Obrigada! Sua mensagem foi enviada com sucesso 😊</p>
+  </form>
+</section>
+
+<!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
     <!--footer section-->
     <footer class="footer">
         <div class="footer-text">
-            <p>© 2025 Sabrinna de Souza. Todos os direitos reservados.</p>
+            <p>© 2026 Sabrinna de Souza. Todos os direitos reservados.</p>
         </div>
         <div class="footer-iconTop">
         <a href="#home"><i class='bx bxs-up-arrow-alt' ></i></a>
@@ -254,6 +257,6 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
     <!--custom js-->
-    <script src="js.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

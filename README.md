@@ -2,8 +2,6 @@
 
 > Desenvolvido em **HTML, CSS e JavaScript** com tema **Dourado & Preto**.
 
-![Preview do Portfólio](./img/preview.png)
-
 ---
 
 ## Sobre o Projeto
@@ -19,15 +17,6 @@ Aqui você encontra um pouco da minha trajetória em **Engenharia de Software** 
 - [BoxIcons](https://boxicons.com/)  
 - [Typed.js](https://github.com/mattboldt/typed.js/)  
 - [ScrollReveal](https://scrollrevealjs.org/)  
-
----
-
-## Demonstração
-### Desktop
-![Desktop Preview](./img/preview_desktop.png)
-
-### Mobile
-![Mobile Preview](./img/preview_mobile.png)
 
 ---
 

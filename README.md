@@ -1,6 +1,11 @@
 # Meu Portfólio Pessoal - Sabrinna de Souza
 
+![GitHub tag](https://img.shields.io/github/v/tag/Ssteixeira/Hello_World)
+
 > Desenvolvido em **HTML, CSS e JavaScript** com tema **Dourado & Preto**.
+
+## Versão
+Atualmente na versão **v1.1**
 
 ---
 
@@ -8,7 +13,6 @@
 Este é o meu portfólio pessoal, criado para apresentar quem sou, minhas habilidades e projetos.  
 Aqui você encontra um pouco da minha trajetória em **Engenharia de Software** e **Big Data**, além de links para entrar em contato comigo.  
 
----
 
 ## Tecnologias Utilizadas
 - HTML5  
